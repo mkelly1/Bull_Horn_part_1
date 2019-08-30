@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Bull Horn Message List</h1>
+<a href="/add">Add your message</a><br/><br/>
+<table>
+    <tr>
+        <th>Post Date</th>
+        <th>Sent by</th>
+        <th>Message</th>
+    </tr>
+    <tr th:each="message :${messages}">
+        <td th:text="${message.postdate}"></td>
+        <td th:text="${message.sentby}"></td>
+        <td th:text="${message.content}">
+        </td>
+    </tr>
+</table>
+</body>
+</html>
