@@ -22,6 +22,9 @@ public class Message {
     @NotNull
     private String sentby;
 
+    @NotNull
+    private String photo;
+
     public long getId() {
         return id;
     }
@@ -52,5 +55,13 @@ public class Message {
 
     public void setSentby(String sentby) {
         this.sentby = sentby;
+    }
+
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
     }
 }
